@@ -1,0 +1,129 @@
+.container{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 98%;
+    max-width: 1480px;
+    margin: 2 auto;
+    border: 1px solid color rgb(205, 120, 50);
+    display: grid;
+    gap: 1rem;
+    background-color: rgb(207, 217, 230);
+    font-size: 13px;
+
+    grid-template-columns: repeat(4,1fr);
+   grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+"card1 card1 card2 card5"
+"card3 card4 card4 card5";
+
+  
+}
+
+.card1{
+    background-color: rgb(93, 25, 138);
+    border-radius: 10px;
+padding: 2em;
+grid-area: card1;
+    
+    }
+.card2{
+    background-color: rgb(100, 108, 122); 
+    border-radius: 10px;
+padding: 2em;
+grid-area: card2;
+    }
+.card3{
+    background-color:white;
+    border-radius: 10px;
+padding: 2em;
+grid-area: card3;    
+    }
+.card4{
+    background-color: rgb(0, 0, 0); 
+    border-radius: 10px;
+padding: 2em;
+grid-area: card4;
+    }
+.card5{
+    background-color: white; 
+    border-radius: 10px;
+padding: 2em;
+grid-area: card5;
+    }
+
+.card-element1 {
+    justify-content: flex-start;
+    display: flex;
+    margin: 0;
+    gap: 15px;
+    align-items:center;
+    }
+.card-nombre {
+    color: white;
+    font-weight: 500;
+font-size: 0.7rem;
+    }
+.card-validacion {
+    color: rgb(248, 248, 248);
+    font-weight: 400;
+    font-size: 0.5rem;    
+    }
+.card-nombre2 {
+    color:black;
+    font-weight: 500;
+font-size: 0.7rem;
+    }
+.card-validacion2 {
+    color:black;
+    font-weight: 400;
+    font-size: 0.5rem;    
+    }
+.card-texto1  {
+    color: white;
+    font-weight: 500;
+font-size: 0.9rem;
+padding: 1px;
+margin: auto;
+    }
+.card-texto2  {
+    color: white;
+    font-weight: 300;
+    font-size: 0.6rem;
+    }
+.card-texto4  {
+    color: black;
+    font-weight: 500;
+font-size: 0.9rem;
+    }
+.card-texto5  {
+    color: black;
+    font-weight: 300;
+    font-size: 0.6rem;
+    }
+.foto {
+    border: 1px solid white;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+ border-radius: 30px;  
+}
+
+
+
+@media only screen and (max-width: 480px){
+.container{  
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.15fr 1fr 1fr;
+    
+     background-color: rgb(184, 206, 206);
+     margin-left: 10px;
+     grid-template-areas: 
+     "card1"
+     "card2"
+     "card3"
+     "card3"
+     "card4"
+     "card5";
+}
+}
